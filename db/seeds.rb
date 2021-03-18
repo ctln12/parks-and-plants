@@ -51,4 +51,15 @@ dieff = Plant.create!(
 )
 puts "  Created #{dieff.name}"
 
+puts "Creating tags..."
+
+names = ['orchid', 'flower', 'cactus', 'palm tree', 'fern']
+
+names.each do |name|
+  tag = Tag.create!(
+    name: name
+  )
+  puts "  Created #{tag.name} tag."
+end
+
 puts "Finished!"
